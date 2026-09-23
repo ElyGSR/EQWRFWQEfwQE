@@ -26,3 +26,19 @@ double promedio = PromedioNotas(notas);
 Console.WriteLine($"Promedio de las notas: {promedio:f2}");
 
 
+//imprimir minimos y maximos de notas
+int min = notas[0];
+int max = notas[0];
+for (int i=1; i < notas.Length;i++)
+{
+    if (notas[i] < min)
+    {
+        min = notas[i];
+    }
+    if (notas[i] > max)
+    {
+        max = notas[i];
+    }
+}
+Console.WriteLine($"Mínima Nota: {min}");
+Console.WriteLine($"Máxima Nota: {max}");
